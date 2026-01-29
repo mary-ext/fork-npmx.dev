@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "includeEntryExports": true,
   "ignoreExportsUsedInFile": true,
-  "ignoreBinaries": ["simple-git-hooks", "lint-staged"],
+  "ignoreBinaries": [],
   "workspaces": {
     ".": {
       "entry": [
@@ -47,13 +47,11 @@
       "ignoreUnresolved": ["#components"]
     },
     "cli": {
-      "entry": ["src/index.ts!"],
-      "project": ["src/**/*.ts!"],
-      "ignoreDependencies": ["h3-next", "obug", "valibot", "validate-npm-package-name"]
+      "project": ["src/**/*.ts!"]
     },
     "docs": {
       "entry": ["app/app.config.ts"],
-      "ignoreDependencies": ["docus", "better-sqlite3", "nuxt"]
+      "ignoreDependencies": ["docus", "better-sqlite3"]
     }
   }
 }
